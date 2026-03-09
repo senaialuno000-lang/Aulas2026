@@ -1,13 +1,113 @@
-<!DOCTYPE html>
+<!-- 
+Form: Engloba os campos do formulário
+    - action = para onde vai as informações obtidas;
+    - method = forma como as informações serão enviadas;
+----------------------------------------------------------------------    
 
+legend: legenda para aquele trecho do formulário 
+----------------------------------------------------------------------
+
+Label: titulo do input
+    for: diz para qual input ele vai servir;
+----------------------------------------------------------------------
+
+Input: coleta as informações do usuário
+    - id: identificação única daquele elemento;
+    - name: usado para identificar o input quando enviar os dados;
+    - placeholder: dica de preenchimento dentro do input;
+-->
+
+<!DOCTYPE html>
 <html lang="pt-br">
+
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Document</title>
+        <title>Formulario</title>
     </head>
 
     <body>
-        
+        <h1>Formularios - Tipos de Input</h1>
+        <form action="">
+            <fieldset>
+
+                <legend>Dados de Login</legend>
+
+                <label for="campoNome">Nome:</label>
+                <input id="campoNome" name="campoNome" type="text" placeholder="Nome Completo" required/>
+
+                <br /><br />
+
+                <!-- Forma 2: Input dentro do label -->
+                <label> Email:
+                    <input id="email" name="email" type="email" placeholder="exemplo@email.com">
+                </label>
+
+                <br /><br />
+
+                <label for="senha">Senha: </label>
+                <input type="password" id="senha" name="senha" placeholder="Digite sua Senha">
+
+                <br /><br />
+
+                <input id="enviar" name="enviar" type="submit" value="Login">
+            </fieldset>
+        </form>
+
+        <!-- Outros Tipos de input -->
+        <h2>Data</h2>
+        <label>data:
+            <input type="date" name="data" id="data">
+            <input type="datetime-local" name="datatime" id="datatime">
+            <input type="time" name="time" id="time">
+        </label>
+
+        <h2>Telefone</h2>
+        <input type="tel" pattern="[0-9]{3}--[0-9]{5}--[0-9]{4}" placeholder="(xxx) x xxxx-xxxx">
+
+        <h2>Números</h2>
+        <input type="number" min="1" max="120" value="7">
+
+        <h2>Barra</h2>
+        <label>
+            <input type="range" min="0" max="100" value="0" step="1">
+        </label>
+
+        <h2>Caixa de texto</h2>
+        <textarea name="" id="" placeholder="biografia"></textarea>
+
+        <h2>Select Cor</h2>
+        <input type="color">
+
+        <h2>Selção</h2>
+        <input type="radio" name="escolhido" value="ti"> ti
+        <input type="radio" name="escolhido" value="jogos"> jogos
+        <input type="radio" name="escolhido" value="Desing"> Desing
+
+        <br>
+
+        <label for="">Quais redes você utiliza</label>
+        <input type="checkbox" name="rede1" value="TikTok"> TikTok
+        <input type="checkbox" name="rede2" value="Zap"> Zap
+        <input type="checkbox" name="rede3" value="Uol"> Uol
+
+        <br>
+
+        <label for="">Selecione sua cidade: </label>
+        <select name="cidade" id="">
+            <option value="Rio de Janeiro">Rio de Janeiro</option>
+            <option value="linhares">Linhares</option>
+            <option value="Vila Velha">Vila Velha</option>
+            <option value="Vitoria">Vitoria</option>
+
+            <optgroup name="ES" value="ES" label="ES">
+                <option value="Cari">Cariacica</option>
+                <option value="Cara">Carapina</option>
+            </optgroup>
+        </select>
+
+        <br>
+
+        <input type="reset" value="resetar">
     </body>
 </html>
