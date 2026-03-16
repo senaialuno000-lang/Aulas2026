@@ -1,0 +1,88 @@
+body {
+    height: 100%;
+    background-color: blueviolet;
+}
+
+.pai {
+    width: 100px;
+    height: 100px;
+    background-color: red;
+}
+.filho {
+    width: 50px;
+    height: 50px;
+    background-color: white;
+}
+
+#pai__estatico {
+    position: static;
+    background-color: aqua;
+}
+
+#filho__estatico {
+    position: static;
+    background-color: black;
+}
+
+#pai__fixo {
+    right: 20px;
+    bottom: 10px;
+    position: fixed;
+    background-color: yellow;
+}
+
+#filho__fixo {
+    position: fixed;
+    background-color: green;
+}
+
+#pai__grudado {
+    top: 0px;
+    height: 200px;
+    background-color: orange;
+}
+
+#filho__grudado {
+    top: 30%;
+    position: sticky;
+    background-color: pink;
+}
+
+#pai__relativo {
+    top: 50px;
+    left: 50px;
+    background-color: gray;
+}
+
+#filho__relativo {
+    top: 20px;
+    left: 20px;
+    position: relative;
+    background-color: white;
+}
+
+#pai__absoluto {
+    top: 200px;
+    left: 200px;
+    position: static;
+    background-color: rgb(255, 116, 116);
+}
+
+#filho__absoluto {
+    top: 280px;
+    left: 500px;
+    position: absolute;
+    background-color: cyan;
+}
+
+#pai__absoluto-relativo {
+    position: relative;
+    background-color: brown;
+}
+
+#filho__absoluto-relativo {
+    top: 80px;
+    left: 20%;
+    position: absolute;
+    background-color: rgb(10, 109, 109);
+}
