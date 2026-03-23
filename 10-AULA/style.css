@@ -1,0 +1,25 @@
+body {
+    text-align: center;
+    background-color: aqua;
+}
+
+.icones {
+    font-size: 100px;
+    color: red;
+}
+
+.icones:hover {
+    color: blue;
+    background-color: yellow;
+}
+
+.icon {
+    font-size: 150px;
+    color: green;
+    background-color: yellow;
+}
+
+.icon:hover {
+    color: yellow;
+    background-color: green;
+}
