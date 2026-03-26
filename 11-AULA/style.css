@@ -1,0 +1,62 @@
+body {
+    color: white;
+    font-size: 60px;
+    text-align: center;
+    background-color: rgb(26, 92, 92);
+}
+
+.quad {
+    /* width: 200px;
+    height: 200px; */
+    line-height: 200px;
+    text-shadow: 5px 5px  black;
+}
+
+ 
+}
+
+#grid {
+    width: 900px;
+    display: grid;
+    height: 900px;
+    grid-gap: 10px;
+    align-items: center;
+    justify-items: center;
+    background-color: burlywood;
+    /* grid-template-columns: 30% 65%;
+    grid-template-rows: 200px 200px 200px 200px; */
+    grid-template: 1fr 1fr / 1fr 1fr 1fr;
+}
+
+#grid2 {
+    display: grid;
+    grid-gap: 10px;
+    grid-template-areas: 
+        "cabecalho cabecalho"
+        "menu principal"
+        "rodape rodape"
+    ;
+    grid-template-columns: 30% 65%;
+    background-color: cornflowerblue;
+    grid-template-rows: 200px 500px 100px;
+}
+
+#Cabeçalho {
+    grid-area: cabecalho;
+    background-color: red;
+}
+
+#Menu {
+    grid-area: menu;
+    background-color: green;
+}
+
+#Principal {
+    grid-area: principal;
+    background-color: blue;
+}
+
+#Rodapé {
+    grid-area: rodape;
+    background-color: yellow;
+}
